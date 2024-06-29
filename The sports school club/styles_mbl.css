@@ -1,0 +1,144 @@
+@media (max-width:1024px) {
+    .logo img {
+        width: 17vw;
+        margin: 0 0 0 6.2vw;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+    nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+        /* Display for tablets */
+    }
+    .hamburger-icon {
+        display: block;
+        /* Display hamburger icon for tablets */
+    }
+    .close-icon {
+        display: none;
+        /* Hide close icon initially */
+    }
+    .menu {
+        display: none;
+        /* Hide the menu by default */
+    }
+    .menu.open {
+        display: block;
+        /* Show the menu when hamburger is clicked */
+    }
+    .slide_1_mb_img {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+    .slide_1_img {
+        display: none;
+    }
+    .menu.open {
+        top: 50%;
+    }
+    .about_us_content_div {
+        width: 80vw;
+        margin: 50% 0 0 11%;
+    }
+    .About_us_title h2 {
+        font-size: 5vw;
+        margin: 15% 0 0 6%;
+    }
+    .about_us_content_p,
+    .extra-content {
+        width: 65vw;
+        font-size: 2vw;
+        margin: 0 5% 0 6%;
+    }
+    /* Know More Button */
+    .about_us_cricket_img img {
+        width: 60vw;
+        transform: translate(-115%, 5%);
+        position: absolute;
+    }
+    .read_more_img,
+    .show_less_img {
+        width: 15vw;
+        margin: 0 0 0 35%;
+    }
+}
+
+@media (max-width:600px) {
+    .logo img {
+        width: 30vw;
+        margin: 0 0 0 6.2vw;
+    }
+    .menu ul {
+        height: 100vh;
+        margin: 10% 0 0 0;
+        padding: 5% 0 0 0;
+    }
+    .menu ul li a {
+        font-size: 6vw;
+    }
+    /* About Us */
+    .About_us_title {
+        width: 50vw;
+        transform: translate(47%, -135%);
+        position: absolute;
+    }
+    .About_us_title h2 {
+        font-size: 10vw;
+        font-family: 'Oxanium';
+        color: white;
+    }
+    .abt_us_cntnt {
+        transform: translate(7%, 0%);
+        position: absolute;
+        margin: 100% 0 0 0;
+    }
+    .about_us_cricket_img img {
+        width: 90vw;
+        transform: translate(-19.5%, 30%);
+        position: absolute;
+    }
+    .about_us_content_div {
+        width: 25vw;
+        margin: 25% 0 0 0;
+        padding: 0 0 0 2%;
+        background-color: white;
+        border-radius: 1vw 0 0 1vw;
+    }
+    .about_us_content_p,
+    .extra-content {
+        width: 85vw;
+        font-size: 4vw;
+        color: white;
+        text-align: center;
+        font-family: 'Dm Sans';
+        margin: 0 0 2% 0;
+    }
+    /* Know More Button */
+    #know-more-btn,
+    #show-less-btn {
+        padding: 0;
+        border: none;
+        margin: 3% 0 3% -1%;
+        transform: translate(55%, 30%);
+        position: absolute;
+        background-color: transparent;
+    }
+    .show-less-btn {
+        display: none;
+    }
+    .extra-content {
+        display: none;
+    }
+    .read_more_img,
+    .show_less_img {
+        width: 30vw;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_mbl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>The Sports School Club Academy</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Images/TSSCA Logo Source File.png.png" alt="Logo">
+            </div>
+            <nav>
+                <ul class="nav_bar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#About_Us">About Us</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#usps">Our USP's</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+                <div class="close-icon">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <div class="menu">
+                    <ul class="nav_bar" id="nav_bar_mbl_tbl">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#About_Us">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#usps">Our USP's</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="Hero_image_scroller" id="Hero_image_scroller ">
+        <div class="carousel-container ">
+            <div class="carousel ">
+                <div class="slide ">
+                    <img src="Images/Hero_image_1.png " alt="Image 1 " class="slide_1_img ">
+                    <img src="Images/hero_image_1_tablet.png " alt=" " class="slide_1_mb_img ">
+                </div>
+                <div class="slide ">
+                    <img src="Images/Hero_image_2.png " alt="Image 2 " class="slide_2_img ">
+                    <a href="# " class="register-button ">Register Now</a>
+                </div>
+                <div class="slide ">
+                    <img src="Images/Hero_image_3.png " alt="Image 3 " class="slide_3_img ">
+                </div>
+            </div>
+            <div class="dots-container ">
+                <span class="dot "></span>
+                <span class="dot "></span>
+                <span class="dot "></span>
+            </div>
+        </div>
+
+        <script src="script.js "></script>
+    </section>
+
+    <section id="About_Us">
+        <div class="about_us_div">
+            <div class="about_us_sub_div">
+                <div class="about_us_content_div">
+                    <div class="About_us_title">
+                        <h2>About Us</h2>
+                    </div>
+                    <div class="abt_us_cntnt">
+                        <div class="about_us_content_p">
+                            The Sports School is a premier multisport training centre in Bangalore, India offering expert coaching and state-of-the-art facilities. It serves as a comprehensive training destination for both aspiring and elite athletes. After achieving remarkable
+                            success in Bangalore, The Sports School expects the same from TSS Cricket Academy in the USA.
+                            <br><br> As always, our USP lies in our international coaches, hailing from cricket powerhouses like India, Australia, and New Zealand. These seasoned professionals bring unparalleled expertise and a wealth of experience to
+                            nurture budding talent.
+                        </div>
+
+                        <!-- Button to toggle extra content -->
+                        <button id="know-more-btn"><img src="Images/read_more.svg" alt="" class="read_more_img"></button>
+                        <!-- Additional content initially hidden -->
+                        <div class="extra-content">
+                            At TSS Cricket Academy, we believe in starting young. Our focus on grassroots training ensures that we identify promising players at the right age, providing them with the necessary skills and knowledge to excel on a global stage. Our learner-students
+                            will have the incredible opportunity to compete in tournaments in India, gaining invaluable exposure and experience.
+                            <br><br> We are bringing our experience, passion and mastery of cricket from India to the USA. Our attention to detail and technical savvy in the sport sets us apart, making us one of the best cricket academies in the world.
+                            Join us at TSS Cricket Academy and be part of a journey that transforms young enthusiasts into world-class cricketers.
+
+                        </div>
+
+                        <button id="show-less-btn" class="show-less-btn"><img src="Images/Show Less.svg" alt="" class="show_less_img"></button>
+
+                        <script>
+                            // JavaScript to toggle visibility of extra content
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const knowMoreBtn = document.getElementById('know-more-btn');
+                                const showLessBtn = document.getElementById('show-less-btn');
+                                const extraContent = document.querySelector('.extra-content');
+
+                                knowMoreBtn.addEventListener('click', function() {
+                                    // Toggle the display of extra content
+                                    extraContent.style.display = 'block';
+                                    // Show the "Show less" button
+                                    showLessBtn.style.display = 'inline-block';
+                                    // Hide the "Know more" button
+                                    knowMoreBtn.style.display = 'none';
+                                });
+
+                                showLessBtn.addEventListener('click', function() {
+                                    // Toggle the display of extra content
+                                    extraContent.style.display = 'none';
+                                    // Hide the "Show less" button
+                                    showLessBtn.style.display = 'none';
+                                    // Show the "Know more" button
+                                    knowMoreBtn.style.display = 'inline-block';
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+
+                <div class="about_us_cricket_img">
+                    <img src="Images/Post-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
