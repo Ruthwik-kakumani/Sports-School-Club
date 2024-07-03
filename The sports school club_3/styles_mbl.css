@@ -1,0 +1,452 @@
+@media (max-width:1024px) {
+    .logo img {
+        width: 17vw;
+        margin: 0 0 0 6.2vw;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+    nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+        /* Display for tablets */
+    }
+    .hamburger-icon {
+        display: block;
+        /* Display hamburger icon for tablets */
+    }
+    .close-icon {
+        display: none;
+        /* Hide close icon initially */
+    }
+    .menu {
+        display: none;
+        /* Hide the menu by default */
+    }
+    .menu.open {
+        display: block;
+        /* Show the menu when hamburger is clicked */
+    }
+    .slide_1_mb_img {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+    .slide_1_img {
+        display: none;
+    }
+    .menu.open {
+        top: 50%;
+    }
+    .about_us_content_div {
+        width: 80vw;
+        margin: 50% 0 0 11%;
+    }
+    .About_us_title h2 {
+        font-size: 5vw;
+        margin: 15% 0 0 6%;
+    }
+    .about_us_content_p,
+    .extra-content {
+        width: 65vw;
+        font-size: 2vw;
+        margin: 0 5% 0 6%;
+    }
+    /* Know More Button */
+    .about_us_cricket_img img {
+        width: 60vw;
+        transform: translate(-115%, 5%);
+        position: absolute;
+    }
+    .read_more_img,
+    .show_less_img {
+        width: 15vw;
+        margin: 0 0 0 35%;
+    }
+    /* Our Team */
+    .our_teamp_upper_part {
+        margin: 8% 0 5% 5%;
+    }
+    .our_teamp_upper_part img {
+        width: 95vw;
+    }
+    .ourteam_lower_div {
+        margin: 0 0 0 2.5%;
+    }
+    .ourteam_lower_div img {
+        width: 95vw;
+    }
+    /* why choose us */
+    .why_choose_academy_div {
+        background-position: 50% 65%;
+        background-size: 70vw;
+        padding: 0 0 0 1%;
+    }
+    .why_choose_academy_title span {
+        font-size: 5.25vw;
+        margin: 0 0 0 7%;
+    }
+    .why_choose_academy_description {
+        font-size: 1.5vw;
+        margin: 1% 0 3% -2%;
+    }
+    .why_choose_uppper_two,
+    .why_choose_middle_two {
+        display: flex;
+    }
+    .why_choose_lower {
+        margin: 0 0 0 2%;
+    }
+    .choose_img_1_div img,
+    .choose_img_2_div img,
+    .choose_img_3_div img,
+    .choose_img_4_div img {
+        width: 47vw;
+        margin: 0;
+    }
+    .choose_img_5_div img {
+        width: 47vw;
+        margin: 0 0 7% 25%;
+    }
+    .our_facilities_img_div {
+        margin: 7% 0 0 6vw;
+        /* Adjust margins as needed */
+    }
+    .map1_img {
+        display: flex;
+    }
+    .map_img {
+        display: none;
+    }
+    /* Contact us */
+    .contact_us_title {
+        margin: 10% 0 0 2.5%;
+    }
+    .contact_us_title span {
+        font-size: 7vw;
+    }
+    .name_div input,
+    .Email_div input,
+    .message_div input {
+        width: 33vw;
+        padding: 2% 1% 1.55% 3%;
+        border-radius: 1vw;
+        margin: 1.5% 0 0 3%;
+        font-size: 2vw;
+    }
+    #howDidYouHear {
+        width: 37vw;
+        padding: 2.50% 1% 2.25% 3%;
+        border-radius: 1vw;
+        margin: 1.5% 0 0 3%;
+        font-size: 2vw;
+    }
+    .social_media_icons_contact_us_div {
+        display: flex;
+        margin: 2.5% 0 0 4%;
+    }
+    .social_media_icons_contact_us_div div {
+        margin: 2% 2.5% 0 0;
+    }
+    .facebook_contact_div img {
+        width: 5vw;
+    }
+    .Instagram_contact_div img,
+    .twitter_contact_div img {
+        width: 5.25vw;
+    }
+    .contact_us_right_div {
+        position: absolute;
+        transform: translateY(-99%);
+        left: 42.5%;
+    }
+    .contact_us_right_div img {
+        width: 55vw;
+    }
+}
+
+@media (max-width:600px) {
+    .logo img {
+        width: 30vw;
+        margin: 0 0 0 6.2vw;
+    }
+    .menu ul {
+        height: 100vh;
+        margin: 10% 0 0 0;
+        padding: 5% 0 0 0;
+    }
+    .menu ul li a {
+        font-size: 6vw;
+    }
+    /* About Us */
+    .About_us_title {
+        width: 50vw;
+        transform: translate(47%, -135%);
+        position: absolute;
+    }
+    .About_us_title h2 {
+        font-size: 10vw;
+        font-family: 'Oxanium';
+        color: white;
+    }
+    .abt_us_cntnt {
+        transform: translate(7%, 0%);
+        position: absolute;
+        margin: 100% 0 0 0;
+    }
+    .about_us_cricket_img img {
+        width: 90vw;
+        transform: translate(-19.5%, 30%);
+        position: absolute;
+    }
+    .about_us_content_div {
+        width: 25vw;
+        margin: 25% 0 0 0;
+        padding: 0 0 0 2%;
+        background-color: white;
+        border-radius: 1vw 0 0 1vw;
+    }
+    .about_us_content_p,
+    .extra-content {
+        width: 85vw;
+        font-size: 4vw;
+        color: white;
+        text-align: center;
+        font-family: 'Dm Sans';
+        margin: 0 0 2% 0;
+    }
+    /* Know More Button */
+    #know-more-btn,
+    #show-less-btn {
+        padding: 0;
+        border: none;
+        margin: 3% 0 3% -1%;
+        transform: translate(55%, 30%);
+    }
+    .show-less-btn {
+        display: none;
+    }
+    .extra-content {
+        display: none;
+    }
+    .read_more_img,
+    .show_less_img {
+        width: 30vw;
+    }
+    /* Quotation */
+    .quotation_div {
+        margin: 205% 0 0 0;
+        padding: 1% 0 1% 16.5%;
+        font-size: 4vw;
+    }
+    .dsk_quotation {
+        display: none;
+    }
+    .mbl_quotation {
+        display: block;
+    }
+    .mbl_2_txt {
+        margin: 0 0 0 6.5%;
+    }
+    .mbl_3_txt {
+        margin: 0 0 0 8.5%;
+    }
+    .ourteam_sub_div_mbl {
+        display: block;
+    }
+    .ourteam_sub_div {
+        display: none;
+    }
+    /* Our Team */
+    .our_teamp_upper_part {
+        margin: 8% 0 5% 0;
+    }
+    .our_teamp_upper_part img {
+        width: 95vw;
+    }
+    .ourteam_lower_div {
+        margin: 0 0 0 5%;
+    }
+    .ourteam_lower_div img {
+        width: 95vw;
+    }
+    /* Why Choose Academy */
+    .why_choose_academy {
+        display: none;
+    }
+    .why_choose_academy_mbl {
+        display: block;
+    }
+    .why_choose_academy_mbl_sub_div {
+        background-color: #000000;
+        background-image: url('Images/bacground\ academy.svg');
+        background-position: 60% 25%;
+        background-repeat: no-repeat;
+        background-size: 90vw;
+        font-family: 'Oxanium';
+        padding: 0 0 0 1%;
+    }
+    .why_choose_academy_upper_title_mbl {
+        color: #E55427;
+        font-size: 8vw;
+        font-family: 'Oxanium';
+        padding: 8% 0 0 20%;
+        margin: 5% 0 0 0;
+        font-weight: 550;
+    }
+    .crck_acdmy_txt {
+        margin: 0 0 0 -2%;
+    }
+    .why_choose_academy_description_mbl {
+        color: white;
+        font-family: 'poppins';
+        font-size: 3vw;
+        margin: 3% 0 3% 0;
+        text-align: center;
+    }
+    .existing-container {
+        position: relative;
+        /* Full viewport width */
+        /* Full viewport height */
+        overflow: hidden;
+        margin: 0 0 0 0;
+    }
+    .existing-slider {
+        display: flex;
+        margin: -30% 0 0 0;
+        /* Full width of container */
+        /* Full height of container */
+        transition: transform 0.5s ease;
+    }
+    .existing-slide {
+        margin: 0 0 0 18%;
+    }
+    .existing-slide img {
+        width: 65vw;
+        height: 100vh;
+        object-fit: contain;
+        /* Ensure images cover the entire slide */
+    }
+    .existing-arrow {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 5vw;
+        /* Adjust arrow width as a percentage of viewport width */
+        height: 5vh;
+        /* Adjust arrow height as a percentage of viewport height */
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        font-size: 3vw;
+        /* Adjust icon size relative to viewport width */
+        color: white;
+        /* Icon color */
+    }
+    .existing-arrow.prev {
+        left: 2vw;
+        /* Adjust left arrow position */
+    }
+    .existing-arrow.next {
+        right: 2vw;
+        /* Adjust right arrow position */
+    }
+    .our_facilities_title {
+        margin: 15% 0 15% 0;
+    }
+    .our_facilities_title span {
+        background-color: #000000;
+        font-size: 8vw;
+        font-weight: 450;
+        color: #E55427;
+        font-family: 'Oxanium';
+        padding: 3% 8% 3% 15%;
+        border-radius: 0 3vw 3vw 0;
+    }
+    .image img {
+        width: 81vw;
+        /* Adjust image width as needed */
+        display: block;
+        border-radius: 3vw;
+        margin: 0 0 0 3vw;
+        /* Adjust border radius as needed */
+    }
+    .wrapper {
+        display: flex;
+        width: 85vw;
+        overflow: hidden;
+    }
+    .image img:hover {
+        width: 81vw;
+        /* Adjust image width as needed */
+        display: block;
+        border-radius: 3vw;
+        margin: 0 0 0 3vw;
+        /* Adjust border radius as needed */
+    }
+    .custom-arrow.next span {
+        font-size: 7vw;
+        margin-left: -50%;
+    }
+    /* Contact Us */
+    .contact_left_div_mbl {
+        display: block;
+    }
+    .contact_left_div {
+        display: none;
+    }
+    .contact_us_title {
+        text-align: center;
+        margin: 10% 0 0 0;
+    }
+    .contact_us_title span {
+        font-size: 8vw;
+        color: white;
+    }
+    .map1_img {
+        width: 70vw;
+        margin: 5% 0 0 15.5%;
+    }
+    .name_div input,
+    .Email_div input,
+    .message_div input {
+        width: 77vw;
+        padding: 3% 1% 2.75% 5%;
+        border-radius: 2vw;
+        margin: 5% 0 0 9.25%;
+        font-size: 4vw;
+    }
+    #howDidYouHear {
+        width: 83vw;
+        cursor: pointer;
+        padding: 3.25% 5% 2.75% 5%;
+        border-radius: 2vw;
+        margin: 5% 0 0 9.25%;
+        border: none;
+        font-size: 4vw;
+        background-color: white;
+        background-size: 2.5vw;
+        background-position: calc(100% - 3vw) center;
+    }
+    .social_media_icons_contact_us_div {
+        justify-content: center;
+        margin: 5% 0 0 0;
+    }
+    .facebook_contact_div img {
+        width: 8vw;
+    }
+    .Instagram_contact_div img,
+    .twitter_contact_div img {
+        width: 8.45vw;
+        margin: 0 0 5% 0;
+    }
+}

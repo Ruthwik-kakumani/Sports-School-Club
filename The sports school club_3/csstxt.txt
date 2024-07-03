@@ -1,0 +1,529 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 1000vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #192F85, #DCDCDC);
+}
+
+.carousel-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.8s ease;
+    width: 300vw;
+}
+
+.slide {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.slide_1_img,
+.slide_2_img,
+.slide_3_img {
+    width: 100%;
+    height: 100vh;
+}
+
+.register-button {
+    position: absolute;
+    top: 66%;
+    left: 11.5%;
+    transform: translate(-50%, -50%);
+    padding: 1.75vw 3.8vw;
+    background-color: #FFF;
+    color: #E55427;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'oxanium';
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
+    transition: background-color 0.3s ease;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    display: inline-block;
+    width: 0.7vw;
+    height: 0.7vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 0.25vw;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff;
+}
+
+
+/* Header */
+
+header {
+    color: #fff;
+    padding: 0;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 8vw;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 63%;
+    margin: 0;
+    padding: 3.5% 1.8% 1% 0;
+    border-radius: 0 0 0.5vw 0.5vw;
+    background-color: #363839;
+}
+
+nav ul li {
+    margin-left: 1vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8vw;
+    font-size: 1vw;
+    font-family: 'Oxanium';
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #E55427;
+    font-weight: 200;
+    font-size: 1vw;
+    text-underline-offset: 0.5vw;
+}
+
+.slide:nth-child(1) {
+    background-image: url('slide1.jpg');
+}
+
+.slide:nth-child(2) {
+    background-image: url('slide2.jpg');
+}
+
+.slide:nth-child(3) {
+    background-image: url('slide3.jpg');
+}
+
+
+/* Hamburger menu */
+
+.hamburger-menu {
+    display: block;
+    /* Initially hide for larger screens */
+    position: absolute;
+    /* Ensure relative positioning for absolute children */
+}
+
+.hamburger-icon,
+.close-icon {
+    position: absolute;
+    top: -2vw;
+    left: 86vw;
+    cursor: pointer;
+    color: #E55427;
+    display: none;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    left: 0vw;
+    width: 100vw;
+    background-color: #363839;
+    transition: top 0.3s ease;
+    z-index: -1;
+}
+
+.menu ul {
+    width: 100vw;
+    right: 0;
+    height: 92.7vh;
+    background-color: #363839;
+    position: absolute;
+    list-style-type: none;
+    text-align: center;
+    z-index: -1;
+}
+
+.menu ul li {
+    margin: 5vw 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3.5vw;
+    display: block;
+    padding: 1vw;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #E55427;
+}
+
+.slide_1_mb_img {
+    display: none;
+}
+
+
+/* About Us */
+
+.about_us_div {
+    width: 100vw;
+}
+
+.about_us_sub_div {
+    width: 100vw;
+    display: flex;
+}
+
+.about_us_content_div {
+    width: 40vw;
+    margin: 8% 0 0 10%;
+    padding: 0 0 0 2%;
+    background-color: white;
+    border-radius: 1vw;
+}
+
+.About_us_title {
+    padding: 0.1% 0 0 0;
+}
+
+.About_us_title h2 {
+    font-size: 3vw;
+    font-family: 'Oxanium';
+    color: #E55427;
+}
+
+.about_us_content_p,
+.extra-content {
+    width: 33.5vw;
+    font-size: 1.25vw;
+    font-family: 'Dm Sans';
+    margin: 0 0 2% 0;
+}
+
+
+/* Know More Button */
+
+#know-more-btn,
+#show-less-btn {
+    padding: 0;
+    border: none;
+    margin: 3% 0 3% -1%;
+    background-color: transparent;
+}
+
+.show-less-btn {
+    display: none;
+}
+
+.extra-content {
+    display: none;
+}
+
+.about_us_cricket_img img {
+    width: 45vw;
+    transform: translate(-10%, 10.5%);
+    position: absolute;
+}
+
+.read_more_img {
+    width: 8vw;
+}
+
+.show_less_img {
+    width: 8vw;
+}
+
+
+/* Quotation */
+
+.quotation_div {
+    margin: 7.7% 0 0 0;
+    color: white;
+    padding: 1% 0 1% 15.5%;
+    background-color: #222222;
+    font-size: 3vw;
+    font-family: 'Oxanium';
+    font-style: italic;
+}
+
+.mbl_quotation {
+    display: none;
+}
+
+.sec_txt {
+    margin: 0 0 0 5.5%;
+}
+
+
+/* Our Team */
+
+.ourteam_sub_div_mbl {
+    display: none;
+}
+
+.OurTeam {
+    width: 100vw;
+    padding: 6.5% 0 0 0;
+}
+
+.our_teamp_upper_part {
+    margin: 0 0 5% 10%;
+}
+
+.our_teamp_upper_part img {
+    width: 80vw;
+}
+
+.ourteam_lower_div {
+    margin: 0 0 0 8.5%;
+}
+
+.ourteam_lower_div img {
+    width: 80vw;
+}
+
+
+/* Why choose academy */
+
+.why_choose_academy_div {
+    background-color: #000000;
+    background-image: url('Images/bacground\ academy.svg');
+    background-position: 50% 65%;
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    font-family: 'Oxanium';
+    padding: 0 0 0 1%;
+}
+
+.why_choose_academy_title {
+    margin: 5% 0 0 0;
+    padding: 3% 0 0 0;
+}
+
+.why_choose_academy_title span {
+    font-size: 4vw;
+    color: #E55427;
+    font-weight: 550;
+    margin: 0 0 0 15.5%;
+}
+
+.why_choose_academy_description {
+    color: white;
+    text-align: center;
+    font-size: 1.1vw;
+    margin: 1% 0 3% -5%;
+    font-family: 'poppins';
+}
+
+.why_choose_uppper_two,
+.why_choose_middle_two {
+    display: flex;
+}
+
+.why_choose_lower {
+    margin: 0 0 0 12%;
+}
+
+.choose_img_1_div img,
+.choose_img_2_div img,
+.choose_img_3_div img,
+.choose_img_4_div img {
+    width: 35vw;
+    margin: 0 0 0 2%;
+}
+
+.choose_img_5_div img {
+    width: 35vw;
+    margin: 0 0 5% 22%;
+}
+
+.why_choose_academy_mbl {
+    display: none;
+}
+
+
+/* Our Facilities */
+
+.our_facilities_title {
+    margin: 8% 0 0 0;
+}
+
+.our_facilities_title span {
+    background-color: #000000;
+    font-size: 4vw;
+    font-weight: 450;
+    color: #E55427;
+    font-family: 'Oxanium';
+    padding: 0.85% 3% 0.85% 10%;
+    border-radius: 0 1vw 1vw 0;
+}
+
+
+/* Our Facilities */
+
+.our_facilities_img_div {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.custom-slider-container {
+    position: relative;
+    width: 100vw;
+    /* Adjusted to 80vw */
+    /* Ensure it respects smaller screens */
+    overflow: hidden;
+    margin: 0 auto;
+    /* Center the slider */
+}
+
+.custom-slider {
+    display: flex;
+    animation: bannermove 20s linear infinite;
+    width: 100vw;
+    overflow: hidden;
+    margin: 5% 0 0 15.3%;
+}
+
+.custom-slide {
+    flex: 0 0 calc(80vw / 3);
+    /* Each slide takes 1/3 of 80vw */
+    margin: 5% 0 0 5.3%;
+    /* Adjust height as needed */
+}
+
+.custom-slide img {
+    width: 25vw;
+    border-radius: 0;
+    /* Ensures images fill the slide */
+    transition: max-width 0.5s ease, border-radius 0.5s ease;
+}
+
+.custom-slide:hover img {
+    /* Example scale for bulging effect */
+    width: 27vw;
+    border-radius: 1vw;
+}
+
+.custom-arrow {
+    width: 1vw;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.custom-arrow.prev {
+    left: 1vw;
+    width: 2vw;
+    margin: 0 0 0 0;
+}
+
+.custom-arrow.next {
+    right: 2vw;
+    width: 1vw;
+}
+
+.custom-arrow.prev span {
+    font-size: 2vw;
+}
+
+.custom-arrow.next span {
+    font-size: 2vw;
+}
+
+
+/* dummy */
+
+img {
+    display: block;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+article {
+    display: flex;
+    width: 200%;
+    animation: bannermove 20s linear infinite;
+}
+
+article.paused {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+div {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    background: transparent;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

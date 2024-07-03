@@ -1,0 +1,811 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 1000vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #192F85, #DCDCDC);
+}
+
+.carousel-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.8s ease;
+    width: 300vw;
+}
+
+.slide {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.slide_1_img,
+.slide_2_img,
+.slide_3_img {
+    width: 100%;
+    height: 100vh;
+}
+
+.register-button {
+    position: absolute;
+    top: 66%;
+    left: 11.5%;
+    transform: translate(-50%, -50%);
+    padding: 1.75vw 3.8vw;
+    background-color: #FFF;
+    color: #E55427;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'oxanium';
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
+    transition: background-color 0.3s ease;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    display: inline-block;
+    width: 0.7vw;
+    height: 0.7vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 0.25vw;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff;
+}
+
+
+/* Header */
+
+header {
+    color: #fff;
+    padding: 0;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 8vw;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 63%;
+    margin: 0;
+    padding: 3.5% 1.8% 1% 0;
+    border-radius: 0 0 0.5vw 0.5vw;
+    background-color: #363839;
+}
+
+nav ul li {
+    margin-left: 1vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8vw;
+    font-size: 1vw;
+    font-family: 'Oxanium';
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #E55427;
+    font-weight: 200;
+    font-size: 1vw;
+    text-underline-offset: 0.5vw;
+}
+
+.slide:nth-child(1) {
+    background-image: url('slide1.jpg');
+}
+
+.slide:nth-child(2) {
+    background-image: url('slide2.jpg');
+}
+
+.slide:nth-child(3) {
+    background-image: url('slide3.jpg');
+}
+
+
+/* Hamburger menu */
+
+.hamburger-menu {
+    display: block;
+    /* Initially hide for larger screens */
+    position: absolute;
+    /* Ensure relative positioning for absolute children */
+}
+
+.hamburger-icon,
+.close-icon {
+    position: absolute;
+    top: -2vw;
+    left: 86vw;
+    cursor: pointer;
+    color: #E55427;
+    display: none;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    left: 0vw;
+    width: 100vw;
+    background-color: #363839;
+    transition: top 0.3s ease;
+    z-index: -1;
+}
+
+.menu ul {
+    width: 100vw;
+    right: 0;
+    height: 92.7vh;
+    background-color: #363839;
+    position: absolute;
+    list-style-type: none;
+    text-align: center;
+    z-index: -1;
+}
+
+.menu ul li {
+    margin: 5vw 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3.5vw;
+    display: block;
+    padding: 1vw;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #E55427;
+}
+
+.slide_1_mb_img {
+    display: none;
+}
+
+
+/* About Us */
+
+.about_us_div {
+    width: 100vw;
+}
+
+.about_us_sub_div {
+    width: 100vw;
+    display: flex;
+}
+
+.about_us_content_div {
+    width: 40vw;
+    margin: 8% 0 0 10%;
+    padding: 0 0 0 2%;
+    background-color: white;
+    border-radius: 1vw;
+}
+
+.About_us_title {
+    padding: 0.1% 0 0 0;
+}
+
+.About_us_title h2 {
+    font-size: 3vw;
+    font-family: 'Oxanium';
+    color: #E55427;
+}
+
+.about_us_content_p,
+.extra-content {
+    width: 33.5vw;
+    font-size: 1.25vw;
+    font-family: 'Dm Sans';
+    margin: 0 0 2% 0;
+}
+
+
+/* Know More Button */
+
+#know-more-btn,
+#show-less-btn {
+    padding: 0;
+    border: none;
+    margin: 3% 0 3% -1%;
+    background-color: transparent;
+}
+
+.show-less-btn {
+    display: none;
+}
+
+.extra-content {
+    display: none;
+}
+
+.about_us_cricket_img img {
+    width: 45vw;
+    transform: translate(-10%, 10.5%);
+    position: absolute;
+}
+
+.read_more_img {
+    width: 8vw;
+    cursor: pointer;
+}
+
+.show_less_img {
+    width: 8vw;
+    cursor: pointer;
+}
+
+
+/* Quotation */
+
+.quotation_div {
+    margin: 7.7% 0 0 0;
+    color: white;
+    padding: 1% 0 1% 15.5%;
+    background-color: #222222;
+    font-size: 3vw;
+    font-family: 'Oxanium';
+    font-style: italic;
+}
+
+.mbl_quotation {
+    display: none;
+}
+
+.sec_txt {
+    margin: 0 0 0 5.5%;
+}
+
+
+/* Our Team */
+
+.ourteam_sub_div_mbl {
+    display: none;
+}
+
+.OurTeam {
+    width: 100vw;
+    padding: 6.5% 0 0 0;
+}
+
+.our_teamp_upper_part {
+    margin: 0 0 5% 10%;
+}
+
+.our_teamp_upper_part img {
+    width: 80vw;
+}
+
+.ourteam_lower_div {
+    margin: 0 0 0 8.5%;
+}
+
+.ourteam_lower_div img {
+    width: 80vw;
+}
+
+
+/* Why choose academy */
+
+.why_choose_academy_div {
+    background-color: #000000;
+    background-image: url('Images/bacground\ academy.svg');
+    background-position: 50% 65%;
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    font-family: 'Oxanium';
+    padding: 0 0 0 1%;
+}
+
+.why_choose_academy_title {
+    margin: 5% 0 0 0;
+    padding: 3% 0 0 0;
+}
+
+.why_choose_academy_title span {
+    font-size: 4vw;
+    color: #E55427;
+    font-weight: 550;
+    margin: 0 0 0 15.5%;
+}
+
+.why_choose_academy_description {
+    color: white;
+    text-align: center;
+    font-size: 1.1vw;
+    margin: 1% 0 3% -5%;
+    font-family: 'poppins';
+}
+
+.why_choose_uppper_two,
+.why_choose_middle_two {
+    display: flex;
+}
+
+.why_choose_lower {
+    margin: 0 0 0 12%;
+}
+
+.choose_img_1_div img,
+.choose_img_2_div img,
+.choose_img_3_div img,
+.choose_img_4_div img {
+    width: 35vw;
+    margin: 0 0 0 2%;
+}
+
+.choose_img_5_div img {
+    width: 35vw;
+    margin: 0 0 5% 22%;
+}
+
+.why_choose_academy_mbl {
+    display: none;
+}
+
+
+/* Our Facilities */
+
+.our_facilities_title {
+    margin: 8% 0 0 0;
+}
+
+.our_facilities_title span {
+    background-color: #000000;
+    font-size: 4vw;
+    font-weight: 450;
+    color: #E55427;
+    font-family: 'Oxanium';
+    padding: 0.85% 3% 0.85% 10%;
+    border-radius: 0 1vw 1vw 0;
+}
+
+
+/* Our Facilities
+
+.custom-arrow {
+    width: 1vw;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.custom-arrow.prev {
+    left: 1vw;
+    width: 2vw;
+    margin: 0 0 0 0;
+}
+
+.custom-arrow.next {
+    right: 2vw;
+    width: 1vw;
+}
+
+.custom-arrow.prev span {
+    font-size: 2vw;
+}
+
+.custom-arrow.next span {
+    font-size: 2vw;
+} 
+
+.our_facilities_img_div {
+    overflow: hidden;
+}
+
+.custom-slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 86.9vw;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2.5% 0 0 6%;
+}
+
+.imageContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image {
+     adjust the width to fit your needs 
+
+margin: 0.5vw;
+display: inline-block;
+
+}
+.image img {
+    width: 28vw;
+    margin: 5% 0 0 0;
+    border-radius: 1vw;
+}
+.custom-arrow {
+    position: absolute;
+    top: 52.5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+.next {
+    right: 2vw;
+}
+.custom-arrow span {
+    font-size: 2vw;
+    color: #fff;
+}
+*/
+
+.our_facilities_img_div {
+    /* Adjust as needed */
+    position: relative;
+    overflow: hidden;
+    margin: 3.5% 0 0 6vw;
+    /* Adjust margins as needed */
+}
+
+.custom-slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    width: 87vw;
+    overflow: hidden;
+}
+
+.imageContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image img {
+    width: 28vw;
+    /* Adjust image width as needed */
+    display: block;
+    border-radius: 1vw;
+    margin: 0 0 0 1vw;
+    cursor: pointer;
+    /* Adjust border radius as needed */
+}
+
+.image img:hover {
+    width: 29vw;
+    border-radius: 1vw;
+    margin: 0 0 0 1.5vw;
+    cursor: pointer;
+    /* Adjust border radius as needed */
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+    background-color: transparent;
+    /* Example background color */
+    color: #fff;
+    /* Example text color */
+    padding: 1vh 1vw;
+    font-size: 2vw;
+    /* Adjust padding as needed */
+}
+
+.custom-arrow:hover {
+    width: 2vw;
+    padding: 0.5vw 0.75vw 0.25vw 0.5vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    /* Darker background on hover */
+}
+
+.custom-arrow.next span {
+    font-size: 2.5vw;
+}
+
+
+/* Testimonials */
+
+.Testimonials_div {
+    background-color: black;
+    padding: 3% 0 0 0;
+    margin: 7% 0 0 0;
+}
+
+.Testimonials_title {
+    width: 100vw;
+    text-align: center;
+}
+
+.Testimonials_title span {
+    color: #E55427;
+    font-family: 'Oxanium';
+    font-weight: 550;
+    font-size: 4vw;
+}
+
+
+/* Tesinomials slider */
+
+.custom-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 95vw;
+    margin: 4% 0 0 2%;
+    /* Adjust height as needed */
+}
+
+.custom-carousel-slider {
+    display: flex;
+    margin: 0 5% 0 5%;
+    transition: transform 0.5s ease;
+}
+
+.custom-carousel-slide {
+    flex: 0 0 33.33%;
+    /* 3 images per row for larger screens and tablets */
+}
+
+.custom-carousel-slide img {
+    width: 30vw;
+    object-fit: cover;
+    /* Ensures images fill the slide without distortion */
+}
+
+.arrow-container {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    /* Ensure arrows appear above slides */
+}
+
+.arrow {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0.25vw 0.5vw 0 0.5vw;
+    cursor: pointer;
+    font-size: 2vw;
+    /* Adjust font size based on viewport width */
+}
+
+.arrow:hover {
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+}
+
+
+/*  video  */
+
+.video-overlay {
+    position: absolute;
+    top: -20%;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-overlay video {
+    object-fit: contain;
+    display: none;
+    /* Adjust as needed to fit your design */
+}
+
+
+/* Media query for tablets and larger screens */
+
+@media (max-width: 1024px) {
+    .custom-carousel {
+        position: relative;
+        overflow: hidden;
+        width: 95vw;
+        margin: 4% 3% 0 3%;
+        /* Adjust height as needed */
+    }
+    .arrow {
+        background-color: transparent;
+        color: #E55427;
+        border: none;
+        padding: 0.25vw 0.5vw 0 0.5vw;
+        cursor: pointer;
+        font-size: 2vw;
+        /* Adjust font size based on viewport width */
+    }
+}
+
+
+/* Media query for mobile screens */
+
+@media (max-width: 768px) {
+    .custom-carousel-slide {
+        flex: 0 0 100%;
+        /* 1 image per row for mobile */
+    }
+    .custom-carousel-slide img {
+        width: 90vw;
+        object-fit: cover;
+        margin-left: 5.5%;
+        /* Ensures images fill the slide without distortion */
+    }
+    .Testimonials_title span {
+        font-size: 7vw;
+    }
+    .Testimonials_title {
+        margin: 7% 0 0 0;
+    }
+}
+
+
+/* Contact US */
+
+.contact_us_title {
+    text-align: left;
+    margin: 10% 0 0 10%;
+}
+
+.contact_us_title span {
+    color: #E55427;
+    font-family: 'Oxanium';
+    font-weight: 550;
+    font-size: 4vw;
+}
+
+.name_div input,
+.Email_div input,
+.message_div input {
+    width: 20vw;
+    padding: 1% 1% 0.75% 1%;
+    border-radius: 0.5vw;
+    margin: 1.5% 0 0 10%;
+    border: none;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 0.05vw;
+    font-family: 'poppins';
+    color: #222222;
+}
+
+#howDidYouHear {
+    width: 22vw;
+    cursor: pointer;
+    padding: 1.25% 1% 1% 1%;
+    border-radius: 0.5vw;
+    margin: 1.5% 0 0 10%;
+    border: none;
+    font-size: 1vw;
+    color: rgba(34, 34, 34, 0.6);
+    letter-spacing: 0.05vw;
+    appearance: none;
+    font-weight: 500;
+    font-family: 'poppins';
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('Images/Polygon\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1vw) center;
+    background-size: 1vw;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+.first_option {
+    color: #222222;
+    font-size: 1vw;
+    border: none;
+}
+
+.social_media_icons_contact_us_div {
+    display: flex;
+    margin: 2.5% 0 0 10%;
+}
+
+.social_media_icons_contact_us_div div {
+    margin: 0 2% 0 0;
+}
+
+.facebook_contact_div img {
+    width: 2.25vw;
+}
+
+.Instagram_contact_div img,
+.twitter_contact_div img {
+    width: 2.45vw;
+}
+
+.contact_us_right_div {
+    position: absolute;
+    transform: translateY(-93%);
+    left: 38%;
+}
+
+.contact_us_right_div img {
+    width: 55vw;
+}
+
+.contact_left_div_mbl {
+    display: none;
+}
+
+.map1_img {
+    display: none;
+}
